@@ -6,12 +6,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,
-    host: true
+    host: true,
   },
   preview: {
     port: 3000,
-    host: true
-},
+    host: true,
+  },
+  build: {
+    minify: false
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
